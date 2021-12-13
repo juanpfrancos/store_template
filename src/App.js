@@ -15,14 +15,13 @@ function App() {
           <Slider/>      
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
-          <HomeGrids/>
+          <IGFeed/>
+        </Grid>
+        <Grid item xs={12} md={12} lg={12}>
           <Products/>
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
           
-        </Grid>
-        <Grid item xs={12} md={12} lg={12}>
-          <IGFeed/>
         </Grid>
       </Grid>
 
