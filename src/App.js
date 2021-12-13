@@ -3,6 +3,8 @@ import Grid from '@mui/material/Grid';
 import Products from './components/Products'
 import Header from './components/Header'
 import Slider from './components/Slider'
+import IGFeed from './components/IGFeed'
+import HomeGrids from "./components/HomeGrids";
 function App() {
   const [hideslide, setHide] = useState(true);
   return (
@@ -10,17 +12,17 @@ function App() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={12} lg={12}>
           <Header/>
-          {hideslide && (<Slider/>)}
-          
+          <Slider/>      
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
-          <Products setHideSlide={setHide}/>
-        </Grid>
-        <Grid item xs={12} md={12} lg={12}>
-          
+          <HomeGrids/>
+          <Products/>
         </Grid>
         <Grid item xs={12} md={12} lg={12}>
           
+        </Grid>
+        <Grid item xs={12} md={12} lg={12}>
+          <IGFeed/>
         </Grid>
       </Grid>
 
