@@ -22,11 +22,15 @@ export default function Products() {
   return (
     <Grid container spacing={2}>
         {hide && 
-            (<GlassMagnifier
-              imageSrc={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/${selected.foto}`}
-              imageAlt="Example"
-              largeImageSrc={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/${selected.foto}`}
-            />)
+            (
+            <Grid item xs={12} md={12} lg={12}>
+                <GlassMagnifier
+                    imageSrc={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/r${selected.foto}`}
+                    imageAlt={selected.referencia}
+                    largeImageSrc={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/${selected.foto}`}
+                />
+            </Grid>
+            )
         }
 
 
@@ -38,7 +42,7 @@ export default function Products() {
                             <CardMedia
                                 component="img"
                                 height="200"
-                                image={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/${item.foto}`}
+                                image={`https://raw.githubusercontent.com/juanpfrancos/store_template/main/src/static/img/r${item.foto}`}
                                 alt={item.nombre}
                             />
                             <CardContent>
