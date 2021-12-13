@@ -17,6 +17,7 @@
     "react-image-magnifiers": "^1.4.0",
     "react-scripts": "4.0.3",
     "react-simple-image-slider": "^2.3.0",
+    "react-slidy": "^4.3.3",
     "swiper": "^7.3.1",
     "web-vitals": "^1.1.2"
   },

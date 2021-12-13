@@ -1,21 +1,25 @@
-import './App.css';
+import React, { useState} from "react";
 import Grid from '@mui/material/Grid';
 import Products from './components/Products'
-import Home from './components/Home'
+import Header from './components/Header'
+import Slider from './components/Slider'
 function App() {
+  const [hideslide, setHide] = useState(true);
   return (
     <>
       <Grid container spacing={2}>
-        <Grid item xs={8} md={12} lg={12}>
-          <Home/>
-        </Grid>
-        <Grid item xs={4} md={12} lg={12}>
-          <Products/>
-        </Grid>
-        <Grid item xs={4} md={12} lg={12}>
+        <Grid item xs={12} md={12} lg={12}>
+          <Header/>
+          {hideslide && (<Slider/>)}
           
         </Grid>
-        <Grid item xs={8} md={12} lg={12}>
+        <Grid item xs={12} md={12} lg={12}>
+          <Products setHideSlide={setHide}/>
+        </Grid>
+        <Grid item xs={12} md={12} lg={12}>
+          
+        </Grid>
+        <Grid item xs={12} md={12} lg={12}>
           
         </Grid>
       </Grid>
