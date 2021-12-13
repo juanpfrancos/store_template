@@ -1,13 +1,13 @@
 import './App.css';
 import Grid from '@mui/material/Grid';
 import Products from './components/Products'
-
+import Home from './components/Home'
 function App() {
   return (
     <>
       <Grid container spacing={2}>
         <Grid item xs={8} md={12} lg={12}>
-          
+          <Home/>
         </Grid>
         <Grid item xs={4} md={12} lg={12}>
           <Products/>
